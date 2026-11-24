@@ -131,7 +131,7 @@ profile/
 
 This repository includes a Render Blueprint in `render.yaml`. In Render, create a new Blueprint from this GitHub repository and set `MONGO_URI` to a MongoDB Atlas connection string when prompted. The contact form uses MongoDB for durable storage; the local JSON fallback is not persistent across Render deployments.
 
-Render builds the frontend and runs the Express server, which serves both the site and API. The service health check is available at `/api/health`.
+Render builds the frontend and runs the Express server, which serves both the site and API. The service health check is available at `/api/health`. The Blueprint uses Render's free web-service plan, which may spin down after inactivity.
 
 ---
 
